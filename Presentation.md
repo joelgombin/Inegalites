@@ -8,4 +8,4 @@ Les données sont issues de [l'Enquête Emploi de l'INSEE, mouture 2009](http://
 
 Et voici donc le graphique :
 
-![graphique](Graphique.png)
+![graphique](https://github.com/joelgombin/Inegalites/raw/master/Graphique.png)
