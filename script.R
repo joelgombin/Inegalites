@@ -15,7 +15,6 @@ save(EnqEmploi09, file="/media/Data/Dropbox/Thèse/Données insee lasmas/enquêt
 
 
 library(ggplot2)
-# qplot(as.integer(as.character(AG)), SALRED, data=ech, geom="smooth", facets= . ~ SEXE)
 caption <- "Source : INSEE, Enquête Emploi 2009. \n Interpolation réalisée au moyen d'un modèle additif généralisé. \n Réalisation : Joël Gombin"
 graphe <- ggplot(EnqEmploi09, aes(Âge, SALRED)) + geom_smooth() + facet_grid(. ~ Sexe) + ylab("Salaire mensuel net") + xlim(c(15,65)) + opts(title="Salaire mensuel net en fonction de l'âge pour les hommes et pour les femmes") +  geom_text(aes(x, y, label = caption), data = data.frame(x = 65, y = 500), hjust=1, vjust=1, size = 4)
 save(graphe, file="/media/Data/Dropbox/Thèse/Données insee lasmas/enquête emploi 2009/graphe.Rdata") 
